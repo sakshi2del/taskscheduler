@@ -1,0 +1,104 @@
+.task-container {
+    margin-bottom: 10px; /* Reduce margin between task rows */
+  }
+  
+  .task {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .task-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .task-expanded {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .task-checkbox {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .task-name, .task-due-date, .task-creator {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 95%; /* Ensure same size */
+    box-sizing: border-box;
+    margin-right: 10px; /* Add gap */
+    transition: border-color 0.3s ease;
+  }
+  
+  .task-name:focus, .task-due-date:focus, .task-creator:focus {
+    border-color: #007bff;
+  }
+  
+  .timestamp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .task-timestamp {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .caret-icon {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .even-caret {
+    color: #9ccc54;
+  }
+  
+  .odd-caret {
+    color: white;
+  }
+  
+  .task-dropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .task-dropdown input[type="text"], .task-dropdown textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-dropdown input[type="text"] {
+    width: 100%;
+  }
+  
+  .task-dropdown textarea {
+    width: 100%;
+    resize: vertical;
+  }
+  
+  .even {
+    background-color: #fff;
+  }
+  
+  .odd {
+    background-color: #9ccc54;
+    border: 1px solid #9ccc54; /* Ensure border matches */
+  }
+  

@@ -1,0 +1,49 @@
+.task-list {
+    padding: 20px;
+  }
+  
+  .task-list-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff; /* Set background to white */
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Add gap */
+  }
+  
+  .task-list-header span {
+    text-align: center;
+  }
+  
+  .add-task {
+    background-color: #9ccc54;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task:hover {
+    background-color: #7fae38;
+  }
+  
+  .task-list .task + .task {
+    margin-top: 10px; /* Reduce gap between consecutive tasks */
+  }
+  
