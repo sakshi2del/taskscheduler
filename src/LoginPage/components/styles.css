@@ -1,0 +1,114 @@
+.loginbtn {
+    margin-top: auto;
+    /* Pushes the button to the bottom */
+    background-color: #94dfe2;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: medium;
+    color: black;
+}
+.msg{
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            margin-top: auto;
+            color: #c23616;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 300px;
+    height: 100%;
+}
+.fpcontainer{
+    display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 400px;
+        height: 230px;
+        margin: auto;
+        margin-top: 150px;
+        margin-left: 400px;
+        margin-right: 400px;
+        background-color: rgba(255, 255, 255, 0.65);
+        position: relative;
+}
+.fpcontainer>*{
+padding: 10px;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+        margin: auto;
+            margin-top: 150px;
+            margin-left: 300px;
+            margin-right: 300px;
+                background-color: rgba(255, 255, 255, 0.65);
+                    position: relative;
+}
+.content{
+    width: 600px;
+    height: fit-content;
+    padding: 40px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border-right: 2px dashed grey;
+}
+
+
+.text {
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 18px;
+}
+
+.inputs>* {
+    display: flex;
+    align-items: center;
+}
+
+.inputs input {
+    
+}
+
+.registerbtn {
+    position: relative;
+    bottom: 20px;
+    margin-top: 20px;
+    background-color: #94dfe2;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: medium;
+    color: black;
+}
+.bottom{
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px
+}
+.bottom .registerbtn{
+    right: 30px;
+}
