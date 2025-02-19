@@ -1,9 +1,10 @@
+// src/HomePage/App.js
 import React, { useState } from 'react';
 import Header from './components/Header';
 import TaskList from './components/TaskList';
 import './App.css';
 
-const App = () => {
+const HomePage = () => {
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -44,4 +45,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default HomePage;

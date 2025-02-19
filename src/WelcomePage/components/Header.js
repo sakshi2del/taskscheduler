@@ -10,7 +10,7 @@ const Header = () => {
         {/* <div className="title">TASK ScheduER</div> */}
       </div>
       <div className="header-right">
-        <button className="auth-button">SignIn</button>
+        <button className="auth-button">Login</button>
         <button className="auth-button">Register</button>
       </div>
     </header>
