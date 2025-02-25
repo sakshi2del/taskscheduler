@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-// import { FaCaretDown } from 'react-icons/fa';
+import { FaCaretDown } from "react-icons/fa";
 import "./Task.css";
-
 const Task = ({
-  name,
-  dueDate,
-  creator,
+  Title,
+  DueDate,
+  CreatedBy,
   completed,
-  timestamp,
+  CreatedAt,
   onInputChange,
   index,
 }) => {
@@ -31,35 +30,35 @@ const Task = ({
           />
           <input
             type="text"
-            value={name}
-            onChange={(e) => onInputChange(index, "name", e.target.value)}
+            value={Title}
+            onChange={(e) => onInputChange(index, "Title", e.target.value)}
             placeholder="Task Name"
             className="task-name"
           />
           <input
             type="date"
-            value={dueDate}
-            onChange={(e) => onInputChange(index, "dueDate", e.target.value)}
+            value={DueDate}
+            onChange={(e) => onInputChange(index, "DueDate", e.target.value)}
             className="task-due-date"
           />
           <input
             type="text"
-            value={creator}
-            onChange={(e) => onInputChange(index, "creator", e.target.value)}
+            value={CreatedBy}
+            onChange={(e) => onInputChange(index, "CreatedBy", e.target.value)}
             placeholder="Creator"
             className="task-creator"
           />
           <div className="timestamp-container">
             <p className="task-timestamp">
-              {new Date(timestamp).toLocaleTimeString()}
+              {new Date(CreatedAt).toLocaleTimeString()}
             </p>
           </div>
-          {/* <FaCaretDown
+          <FaCaretDown
             onClick={toggleDropdown}
             className={`caret-icon ${
               index % 2 === 0 ? "even-caret" : "odd-caret"
             }`}
-          /> */}
+          />
         </div>
         {dropdownVisible && (
           <div className="task-dropdown">

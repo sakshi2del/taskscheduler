@@ -8,8 +8,6 @@ function WelcomePage() {
   return (
     <div>
       <Header />
-      <h1>Welcome to the Task Scheduler App</h1>
-      <Link to="/login">Login/Signup</Link>
       <Body />
     </div>
   );
