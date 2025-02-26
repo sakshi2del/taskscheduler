@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import './Header.css';
-import Dlogo from '../assets/images/Dlogo.png';
-import { FaUser, FaQuestionCircle } from 'react-icons/fa';
+import React, { useState } from "react";
+import "./Header.css";
+import Dlogo from "../assets/images/Dlogo.png";
+import { Link } from "react-router-dom";
+import { FaUser, FaQuestionCircle } from "react-icons/fa";
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
-
+  
   return (
     <header className="header">
       <img src={Dlogo} alt="Logo" className="logo" />
